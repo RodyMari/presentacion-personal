@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Presentación</title>
+  <style>
+    body {
+      display: flex;
+      flex-wrap: wrap;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      display: flex;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: 600px;
+    }
+
+    .left-column {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .right-column {
+      flex: 2;
+      padding: 20px;
+    }
+
+    .avatar, .flores {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        height: auto;
+        margin: 1rem;
+      }
+
+      .card {
+        flex-direction: column;
+        max-width: 400px;
+      }
+
+      .left-column, .right-column {
+        flex: 1;
+        padding: 10px 20px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="left-column">
+      <img class="avatar" src="foto.png" alt="Foto de presentación">
+      <img class="flores" src="flores.jpg" alt="Imagen de flores">
+    </div>
+    <div class="right-column">
+      <h1>Rodica</h1>
+      <p>Apasionada por el desarrollo web y la programación. Estudiando y mejorando
+        constantemente mis habilidades en el mundo del desarrollo web.
+        Disfruto creando sitios web y aplicaciones que marcan la diferencia.
+      </p>
+      <p>Amante de las plantas y la jardinería como mi pasatiempo favorito.
+        En mi tiempo libre, cultivo y cuido una variedad de plantas en mi jardín.</p>
+      <p>Me encanta la combinación de la creatividad del desarrollo web y la
+        tranquilidad que encuentro en cuidar mis plantas.</p>
+    </div>
+  </div>
+</body>
+</html>
